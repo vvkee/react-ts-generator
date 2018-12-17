@@ -1,6 +1,6 @@
 {
   "name": "@vvkee/react-ts-generator",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "react styled-component typescript cli generator",
   "main": "main.js",
   "author": "vvkee",

@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 const shell = require('shelljs');
 const path = require('path');
+const config = require('./config');
 const cleanDist = require('./clean-dist');
 const copyTemplateToDist = require('./copy-template-to-dist');
 const modifyDist = require('./modify-dist');
@@ -48,8 +49,7 @@ const askQuestions = () => {
 const copyDirs = (dirName) => {
   const root = process.cwd();
   const filePath = `${process.cwd()}/${dirName}`;
-  const tempPath = path.resolve(__dirname, '../.dist');
-  console.log(filePath, tempPath);
+  const tempPath = config.path.dist;
   shell.cp('-R', tempPath, filePath);
   return filePath;
 };
@@ -76,6 +76,7 @@ const run = async () => {
     await updatePackageVersion();
   }
   const dirPath = copyDirs(DIRNAME);
+  cleanDist();
   success(`create project success. The dir path is ${dirPath}`);
 }
 
