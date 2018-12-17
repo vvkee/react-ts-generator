@@ -1,0 +1,25 @@
+{
+  "name": "@vvkee/react-ts-generator",
+  "version": "1.0.0",
+  "description": "react styled-component typescript cli generator",
+  "main": "main.js",
+  "author": "vvkee",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "ejs": "^2.6.1",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.1",
+    "npm-check-updates": "^2.15.0",
+    "shelljs": "^0.8.3"
+  },
+  "files": [
+    "main.js",
+    "template",
+    "scripts"
+  ],
+  "bin": "./main.js"
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES5",
+    "outDir": "./dist/",
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowJs": false,
+    "lib": [
+      "es7",
+      "DOM"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules",
+    "scripts",
+    "dist"
+  ],
+  "include": [
+    "./src"
+  ]
+}

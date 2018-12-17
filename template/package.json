@@ -1,0 +1,20 @@
+{
+  "name": "<%=project_name%>",
+  "version": "1.0.0",
+  "description": "<%=project_description%>",
+  "main": "./src/index.ts",
+  "author": "<%=project_author%>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "styled-components": "3.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.15",
+    "@types/react": "^15.5.0",
+    "@types/react-dom": "^15.5.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.7.2"
+  }
+}
