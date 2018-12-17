@@ -7,5 +7,5 @@ const templatePath = config.path.template;
 
 module.exports = () => {
   const root = process.cwd();
-  shell.cp('-R', templatePath, distPath);
+  shell.cp('-Rf', templatePath, distPath);
 }
